@@ -68,7 +68,8 @@ def rot(n):
         return np.identity(3)
 
 def get_3d_bbox(b_box):
-    size = b_box[6:9]
+    size = b_box[6:9].astype(np.float32)
+    size = size * 0.6
     p0 = -size / 2
     p1 = size / 2
     vertices = np.array([
