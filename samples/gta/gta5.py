@@ -183,12 +183,12 @@ class gta5DataSet(utils.Dataset):
 def train(model):
     """Train the model."""
     # Training dataset.
-    dataset_train = gta5Dataset()
+    dataset_train = gta5DataSet()
     dataset_train.load_gta5(args.dataset, "train")
     dataset_train.prepare()
 
     # Validation dataset
-    dataset_val = gta5Dataset()
+    dataset_val = gta5DataSet()
     dataset_val.load_gta5(args.dataset, "val")
     dataset_val.prepare()
 
