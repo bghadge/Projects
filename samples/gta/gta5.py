@@ -116,7 +116,7 @@ class gta5DataSet(utils.Dataset):
                 self.add_image(self.source, i, path)
         else:
             for i,path in enumerate(self.train_img_list):
-                self.add_image(self.source, i, path, "bbox"=bbox[i,:], "label"=labels[i])
+                self.add_image(self.source, i, path, bbox=bbox[i,:], label=labels[i])
 
     def image_reference(self, image_id):
         """Return path of the image."""
