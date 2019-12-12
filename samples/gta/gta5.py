@@ -79,7 +79,7 @@ class gta5Config(Config):
 
     # Resize image according to dataset
     IMAGE_MAX_DIM = 2048
-    IMAGE_SHAPE = [1914 1052 3]
+    IMAGE_SHAPE = [1914, 1052, 3]
 
 
 
