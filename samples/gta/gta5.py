@@ -93,7 +93,7 @@ class gta5DataSet(utils.Dataset):
         #additional initilization source named as "ROB535"
         self.source  = "gta5"
         self.root_path = Root_Path
-        tr_data = np.loadtxt(Root_Path.replace('images','data') + 'training_data.csv', skiprows=1, dtype=str, delimiter=',')
+        tr_data = np.loadtxt(Root_Path.replace('images','data/') + 'training_data.csv', skiprows=1, dtype=str, delimiter=',')
         np.random.shuffle(tr_data)
         relative_img_path = tr_data[:,0]
         bbox = tr_data[:,1:10].astype(np.float32)
