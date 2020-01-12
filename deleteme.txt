@@ -1,0 +1,2 @@
+deleteme.txt	   Inverted_Pendulum		Visual_Odometry_Stereo
+Digit_Recognition  Visual_Odometry_Point_Cloud
